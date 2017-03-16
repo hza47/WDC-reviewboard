@@ -86,7 +86,7 @@
                  url: connectionUrl,    //"http://localhost:8889/reviewboard/api/groups/Recommendations_Team/users/",
                  dataType: 'json',
                  success: function(data) {
-                    console.log(data)
+                  
                      if (data.review_requests.length>0) {
                          var review_requests = data.review_requests
                          var toRet = [];
@@ -124,7 +124,7 @@
                                              url: getNextUrl(counter),  
                                              dataType: 'json',
                                              success: function(data) {
-                                                console.log(data)
+                              
                                                  if (data.review_requests.length>0) {
                                                      var review_requests = data.review_requests
                                                      var toRet = [];
