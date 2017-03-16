@@ -66,15 +66,15 @@
            var status = xhr.statusText;
            console.log(status);
 
-           if(xhr.statusText == "Unauthorized") {
-                $("#WrongWarning").css('display', 'inline');
-
-           } else {
+          if(xhr.statusText == "OK") {
                $("#WrongWarning").css('display', 'none');
                $("#username").css('display', 'none');
                $("#password").css('display', 'none');
                $("#verifyLogin").css('display', 'none');
                $("#submitButton").css('display', 'inline');
+
+           } else {
+               $("#WrongWarning").css('display', 'inline');
                
            }
     }
