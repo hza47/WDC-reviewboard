@@ -53,7 +53,7 @@
          
          var reviewboardname = table.tableInfo.id;
 
-         var url = "http://localhost:8889/reviewboard/api/review-requests/" + "?start=0&max-results=200";
+         var url = "http://reviewboard/api/review-requests/" + "?start=0&max-results=200";
          var connectionUrl = url;
          var APIPromise = makeAPIRequest(table, reviewboardname, connectionUrl); // Key and ticker are the same
 
