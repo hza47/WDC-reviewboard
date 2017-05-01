@@ -7,7 +7,7 @@
 
      function getNextUrl(iteration) {
         var start = iteration*200;
-         var url = "http://localhost:8889/reviewboard/api/review-requests/" + "?start="+ start +"&max-results=200";
+         var url = "http://reviewboard/api/review-requests/" + "?start="+ start +"&max-results=200";
         return url;
      }
 
